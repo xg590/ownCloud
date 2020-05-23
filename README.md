@@ -12,8 +12,7 @@ cd ownCloud-master
 2. Setup automatic configuration 
 ```
 sed -i 's/Here_should_be_your_domain_name/your_domain_name/g' docker-compose.yml http/000-default.conf
-cp autoconfig.php /var/www/owncloud/config/autoconfig.php 
-sed -i 's/nextcloud/owncloud/g' /var/www/owncloud/config/autoconfig.php 
+cp autoconfig.php /var/www/owncloud/config/autoconfig.php  
 chown -R www-data:www-data /var/www/owncloud/config/autoconfig.php 
 ```
 3. Fire up docker images 
