@@ -26,8 +26,7 @@ services:
     volumes:
       - /var/www/html/:/var/www/html/file:ro
       - /etc/letsencrypt/live/Here_should_be_your_domain_name/privkey.pem:/ssl/privkey.pem:ro
-      - /etc/letsencrypt/live/Here_should_be_your_domain_name/fullchain.pem:/ssl/fullchain.pem:ro
-      - /var/www/nextcloud:/var/www/html/nextcloud
+      - /etc/letsencrypt/live/Here_should_be_your_domain_name/fullchain.pem:/ssl/fullchain.pem:ro 
       - /var/www/owncloud:/var/www/html/owncloud
     networks:
       - intranet
