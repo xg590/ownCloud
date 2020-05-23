@@ -13,6 +13,7 @@ RUN apt install -y apache2 wget    \
                    php7.2-imagick  \
                    php7.2-mbstring \
                    libapache2-mod-php7.2
+#                  Choosing php7.2 is because of owncloud since it isn't compatible with php7.4 (the latest)
 RUN rm -rf /var/lib/apt/lists/*
 RUN a2enmod ssl
 COPY 000-default.conf /etc/apache2/sites-enabled/000-default.conf 
